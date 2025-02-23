@@ -1,0 +1,13 @@
+# .gitignore content
+# Python
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# PyCharm
+.idea/
+.vscode/
+
+# Git
+backend/.git  # Remove if exists (you shouldn't have nested .git)
