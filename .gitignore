@@ -1,13 +1,27 @@
-# .gitignore content
+# Create new .gitignore with these contents
+@'
 # Python
-.venv/
+
 __pycache__/
 *.pyc
+*.pyo
+
+# Environment
 .env
+.env.local
 
 # PyCharm
 .idea/
-.vscode/
+*.iml
 
-# Git
-backend/.git  # Remove if exists (you shouldn't have nested .git)
+# Virtual Environments (entire folder)
+.venv/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# System
+.DS_Store
+Thumbs.db
+'@ | Out-File -FilePath .gitignore -Encoding utf8
