@@ -10,7 +10,8 @@ import struct
 from time import time
 import os
 
-from config import OPENAI_API_KEY
+from backend.config import OPENAI_API_KEY
+
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("BibleTranscriber")
